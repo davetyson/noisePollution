@@ -246,6 +246,7 @@ h3 {
 
 .testimonialsFlex {
     flex-direction: row;
+    margin-bottom: 30px;
 }
 
 .testimonialsText {
