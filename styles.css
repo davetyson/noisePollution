@@ -10,6 +10,7 @@ html { box-sizing: border-box;}
 @font-face {
     font-family: cooper;
     src: url(cooperBlackRegular.ttf);
+    font-display: swap;
 }
 
 body {
