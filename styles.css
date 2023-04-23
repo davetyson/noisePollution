@@ -15,7 +15,6 @@ html { box-sizing: border-box;}
 
 body {
     color: #212121;
-    text-align: center;
     font-size: 125%;
     font-family: 'Open Sans', sans-serif;
 }
@@ -31,10 +30,26 @@ h3 {
     color: #FF4031;
     font-family: cooper, sans-serif;
 }
+h1,
+h2 {
+    font-size: 3rem;
+    line-height: 2.8rem;
+}
+
+h2 {
+    border-bottom: 3px solid #FF4031;
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+}
+
+h2,
+h3 {
+    text-align: center;
+}
 
 img {
     max-width: 100%;
-    height: auto;
     display: block;
 }
 
@@ -60,13 +75,16 @@ ul {
 figure {
     margin: 0 auto;
     max-width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-button {
-    background-color: #1F2022;
-    border: none;
-    padding: 10px;
-    transition: 0.1s;
+#introduction,
+#classes,
+#testimonials,
+#contact {
+    padding: 10px 0;
 }
 
 .flexbox {
@@ -83,7 +101,7 @@ button {
 
 header {
     background-color: #212121;
-    padding-top: 30px;
+    padding-top: 5dvh;
 }
 
 header figure {
@@ -104,20 +122,163 @@ nav {
     padding: 0 15px;
 }
 
-/* About styles */
+/* Introduction styles */
+#introduction {
+    padding-top: 20px;
+}
+.introductionFlex {
+    flex-direction: row;
+}
+
+.introductionText {
+    flex-direction: column;
+    width: 65%;
+}
+
+.introductionImg {
+    width: 35%;
+}
+
+.introductionImg img {
+    height: 450px;
+}
 
 /* Classes styles */
+#classes ul {
+    margin: 30px auto;
+    flex-wrap: wrap;
+}
+
+#classes figure {
+    border: 5px solid #212121;
+}
+
+figcaption {
+    font-weight: 700;
+    font-size: 1rem;
+    display: inline-block;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.studioImg,
+.classesImg {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.studioImg {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.studioImg figcaption {
+    width: 70%;
+}
+
+.classesImg {
+    width: 45%;
+    flex-direction: column;
+}
 
 /* Testimonial styles */
 
+#testimonials img {
+    width: 35%;
+    height: 100%;
+    padding: 20px;
+}
+
+#testimonials p {
+    font-size: 1.5rem;
+}
+
+h3 {
+    text-align: right;
+}
+
+.testimonialsText {
+    flex-direction: column;
+    width: 65%;
+    justify-content: center;
+}
+
 /* Contact styles */
+
+form {
+    padding-top: 20px;
+}
+
+fieldset {
+    border: none;
+    width: 80%;
+    margin: 0 auto;
+}
+
+input {
+    width: 50%;
+}
+
+textarea {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    min-height: 200px;
+}
+
+button {
+    background-color: #FF4031;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.5rem;
+    border: none;
+    padding: 10px;
+    margin: 10px auto;
+    transition: 0.1s;
+}
+
+button:hover,
+button:focus {
+    background-color: #212121;
+    color: #FF4031;
+}
+
+#name {
+    margin-right: 10px;
+}
+
+#email {
+    margin-left: 10px;
+}
+
+.nameEmail {
+    margin-bottom: 10px;
+}
 
 /* Footer styles */
 footer {
     background-color: #212121;
     color: #FFF;
     padding: 20px;
+    text-align: center;
 }
 
-
+/* Media Queries */
+@media (max-width: 768px) {
+    body {
+        font-size: 100%;
+    }
+    h1,
+    h2 {
+        font-size: 2rem;
+    }
+    .introductionFlex {
+        flex-direction: column;
+    }
+}
 
