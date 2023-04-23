@@ -152,6 +152,11 @@ nav p {
 #introduction {
     padding-top: 20px;
 }
+
+#introduction h3 {
+    padding-right: 20px;
+}
+
 .introductionFlex {
     flex-direction: row;
 }
@@ -382,6 +387,9 @@ footer {
     .hideMenu {
         display: none;
     }
+    #introduction h3 {
+        padding-right: 0;
+    }
     .introductionFlex {
         flex-direction: column-reverse;
     }
@@ -391,12 +399,20 @@ footer {
     }
     .introductionFig {
         width: auto;
+        margin-top: 20px;
     }
     .introductionFig img {
         height: 300px;
     }
     .classesImg {
         width: calc(100% - 20px);
+    }
+    .studioImg figcaption,
+    .classesImg figcaption {
+        width: 100%;
+    }
+    .classesImg figcaption {
+        margin-bottom: 10px;
     }
     .testimonialsFlex {
         flex-direction: column;
@@ -415,7 +431,12 @@ footer {
         width: 100%;
     }
     .contactIconBox {
-        width: 330px;
+        width: 350px;
+    }
+    .contactIconBox p,
+    footer p,
+    footer a {
+        font-size: 112.5%
     }
 }
 
