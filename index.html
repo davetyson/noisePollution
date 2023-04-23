@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -18,17 +19,18 @@
         </figure>
         <nav>
             <ul class="flexbox menu wrapper">
-                <li><a href="#">Home</a></li>
-                <li><a href="#classes">Classes</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li class="menuOpen" tabindex="0"><p class="menuOpenP">Menu</p></li>
+                <li class="menuLink hideMenu"><a href="#">Home</a></li>
+                <li class="menuLink hideMenu"><a href="#classes">Classes</a></li>
+                <li class="menuLink hideMenu"><a href="#testimonials">Testimonials</a></li>
+                <li class="menuLink hideMenu"><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section id="introduction" class="wrapper">
             <div class="introductionFlex flexbox">
-                <figure class="introductionImg">
+                <figure class="introductionFig">
                     <img src="assets/NPRS-Caricature-Black on White_Web.png" alt="a cartoon of matt ellis, the instructor at noise pollution rock school">
                 </figure>
                 <div class="introductionText flexbox">
@@ -68,8 +70,10 @@
         </section>
         <section id="testimonials" class="wrapper">
             <h2>Testimonials</h2>
-            <div class="flexbox">
-                <img src="assets/NPRS-Tongue Badge_Web.png" alt="Noise Pollution Rock School badge logo">
+            <div class="testimonialsFlex flexbox">
+                <figure>
+                    <img src="assets/NPRS-Tongue Badge_Web.png" alt="Noise Pollution Rock School badge logo">
+                </figure>
                 <div class="testimonialsText flexbox">
                     <p>"Great right hand."</p>
                     <h3>- Johnny Ramone</h3>
@@ -80,13 +84,27 @@
         </section>
         <section id="contact" class="wrapper">
             <h2>Contact</h2>
-            <p class="contactP">Contact Matt with questions, special requests, or to book your next class at Noise Pollution Rock School!</p>
-            <p class="contactP"><strong>Noise Pollution Rock School / Matt Ellis</strong></p>
-            <div class="addressBlock">
-                <p>169 East 23rd Street</p>
-                <p>Hamilton, ON</p>
-                <p>905.531.8133</p>
-                <p>mattellis1333@gmail.com</p>
+            <p class="contactInstructions">Contact Matt with questions, special requests, or to book your next class at Noise Pollution Rock School!</p>
+            <p class="contactBoxTitle"><strong>Noise Pollution Rock School / Matt Ellis</strong></p>
+            <div class="contactBlock flexbox">
+                <div class="contactIconBox flexbox">
+                    <i class="fa fa-home" aria-hidden="true"></i><span class="sr-only">Address</span>
+                    <p>169 East 23rd Street, Hamilton, ON</p>
+                </div>
+                <div class="contactIconBox flexbox">
+                    <i class="fa fa-phone" aria-hidden="true"></i><span class="sr-only">Phone</span>
+                    <p>905.531.8133</p>
+                </div>
+                <div class="contactIconBox flexbox">
+                    <i class="fa fa-envelope-open" aria-hidden="true"></i><span class="sr-only">Email</span>
+                    <p>mattellis1333@gmail.com</p>
+                </div>
+                <div class="contactIconBox flexbox">
+                    <a href="https://instagram.com/noise_pollution_rock_school" target="_blank">
+                        <i class="fa fa-instagram" aria-hidden="true"></i><span class="sr-only">Instagram - this link will open in a new tab</span>
+                    </a>
+                    <p>@noise_pollution_rock_school</p>
+                </div>
             </div>
             <form method="post" name="emailContactForm" action="SET UP FORMSPREE EMAIL">
                 <fieldset>

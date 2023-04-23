@@ -6,8 +6,7 @@ html { box-sizing: border-box;}
 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
-/* GLOBAL STYLES */
-
+/* Global styles */
 @font-face {
     font-family: cooper;
     src: url(cooperBlackRegular.ttf);
@@ -55,14 +54,14 @@ img {
 
 a {
     color: #212121;
-    font-weight: 700;
-    font-size: 2rem;
     text-decoration: none;
     transition: 0.1s;
 }
 
 a:hover,
-a:focus {
+a:focus,
+.menuOpen:hover,
+.menuOpen:focus {
     color: #FFF;
 }
 
@@ -97,8 +96,12 @@ figure {
     margin: 0 auto;
 }
 
-/* Header styles */
+.fa {
+    font-size: 2rem;
+    margin: 5px 20px 5px 0;
+}
 
+/* Header styles */
 header {
     background-color: #212121;
     padding-top: 5dvh;
@@ -112,6 +115,12 @@ nav {
     background-color: #FF4031;
 }
 
+nav a,
+nav p {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
 .menu {
     flex-direction: row;
     justify-content: center;
@@ -120,6 +129,23 @@ nav {
 
 .menu li {
     padding: 0 15px;
+}
+
+.menuOpen {
+    display: none;
+    transition: 0.1s;
+}
+
+.menuOpen p {
+    margin: 0 0 10px 0;
+}
+
+.showMenu {
+    display: inline-block;
+}
+
+.hideMenu {
+    display: inline-block;
 }
 
 /* Introduction styles */
@@ -135,11 +161,11 @@ nav {
     width: 65%;
 }
 
-.introductionImg {
+.introductionFig {
     width: 35%;
 }
 
-.introductionImg img {
+.introductionFig img {
     height: 450px;
 }
 
@@ -161,7 +187,7 @@ figcaption {
     font-weight: 700;
     font-size: 1rem;
     display: inline-block;
-    padding: 10px 0;
+    padding-top: 10px;
     text-align: center;
 }
 
@@ -188,7 +214,7 @@ figcaption {
 }
 
 /* Testimonial styles */
-#testimonials img {
+#testimonials figure {
     width: 35%;
     height: 100%;
     padding: 20px;
@@ -202,6 +228,10 @@ figcaption {
 h3 {
     text-align: right;
     padding-right: 100px;
+}
+
+.testimonialsFlex {
+    flex-direction: row;
 }
 
 .testimonialsText {
@@ -250,6 +280,7 @@ button:hover,
 button:focus {
     background-color: #212121;
     color: #FF4031;
+    cursor: pointer;
 }
 
 #name {
@@ -260,16 +291,37 @@ button:focus {
     margin-left: 10px;
 }
 
-.contactP {
+.contactInstructions,
+.contactBoxTitle {
     display: block;
-    margin: 10px auto;
     width: 65%;
     text-align: center;
 }
 
-.addressBlock p {
+.contactInstructions {
+    margin: 20px auto;
+    font-size: 1.5rem;
+}
+
+.contactBoxTitle {
+    margin: 10px auto;
+}
+
+.contactBlock {
+    flex-direction: column;
     margin: 0 auto;
+    width: 50%;
+}
+
+.contactBlock p {
+    margin: auto auto auto 0;
     text-align: center;
+    height: fit-content;
+}
+
+.contactIconBox {
+    margin: 0 auto;
+    width: 500px;
 }
 
 .nameEmail {
@@ -311,8 +363,59 @@ footer {
     h2 {
         font-size: 2rem;
     }
-    .introductionFlex {
+    h2 {
+        width: 100%;
+    }
+    h3 {
+        padding: 0;
+    }
+    .menu {
         flex-direction: column;
+        text-align: center;
+    }
+    .menuOpen {
+        display: inline-block;
+    }
+    .showMenu {
+        display: inline-block;
+    }
+    .hideMenu {
+        display: none;
+    }
+    .introductionFlex {
+        flex-direction: column-reverse;
+    }
+    .introductionText {
+        text-align: center;
+        width: 100%;
+    }
+    .introductionFig {
+        width: auto;
+    }
+    .introductionFig img {
+        height: 300px;
+    }
+    .classesImg {
+        width: calc(100% - 20px);
+    }
+    .testimonialsFlex {
+        flex-direction: column;
+    }
+    #testimonials figure {
+        height: 50%;
+        width: 50%;
+    }
+    #testimonials p {
+        padding: 0;
+    }
+    .testimonialsText {
+        width: 100%;
+    }
+    .contactBlock {
+        width: 100%;
+    }
+    .contactIconBox {
+        width: 330px;
     }
 }
 
