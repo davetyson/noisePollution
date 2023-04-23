@@ -339,6 +339,7 @@ button:focus {
 
 .nameEmail {
     margin-bottom: 10px;
+    flex-wrap: nowrap;
 }
 
 /* Footer styles */
@@ -381,6 +382,7 @@ footer {
     }
     h3 {
         padding: 0;
+        font-size: 125%;
     }
     .menu {
         flex-direction: column;
@@ -437,6 +439,17 @@ footer {
     }
     fieldset {
         width: 100%;
+    }
+    input {
+        width: 100%;
+    }
+    #name,
+    #email {
+        padding: 0;
+        margin: 5px auto;
+    }
+    .nameEmail {
+        flex-wrap: wrap;
     }
     .contactBlock {
         width: 100%;
