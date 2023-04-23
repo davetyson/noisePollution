@@ -5,8 +5,92 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Noise Pollution Rock School</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <header>
+        <figure>
+            <img src="assets/NPRS-PrimaryWordmark-Colour_Web.png" alt="noise pollution rock school">
+        </figure>
+        <nav>
+            <ul class="flexbox menu wrapper">
+                <li><a href="#">Home</a></li>
+                <li><a href="#classes">Classes</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="introduction" class="wrapper">
+            <div class="flexbox">
+                <figure>
+                    <img src="assets/NPRS-Caricature-Black on White_Web.png" alt="a cartoon of matt ellis, the instructor at noise pollution rock school">
+                </figure>
+                <div class="flexbox">
+                    <h1>Howdy! Welcome to Noise Pollution Rock School</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam porro iste molestias facere ducimus aliquid illum. Corrupti asperiores quibusdam deserunt rerum dolor. Cupiditate minima, possimus qui repellat numquam cum. Laudantium?
+                    Magni, quod laborum cum assumenda hic corrupti asperiores. Adipisci dicta architecto dignissimos eius iste, consectetur expedita rerum nisi laudantium delectus earum recusandae ea perspiciatis dolorum labore sint quis tempore eos.</p>
+                </div>
+            </div>
+        </section>
+        <section id="classes" class="wrapper">
+            <h2>Classes</h2>
+            <ul class="flexbox">
+                <li>
+                    <figure>
+                        <img src="studiophoto1" alt="">
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="studiophoto2" alt="">
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="studiophoto3" alt="">
+                    </figure>
+                </li>
+            </ul>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe repellendus dignissimos consequuntur atque doloribus labore alias explicabo quis eaque similique qui, nobis quas error dolorum maxime tempora odio delectus ratione.
+            Quisquam quos tempora magnam at eum libero voluptas, animi provident neque cumque consequatur laboriosam reprehenderit rerum voluptates similique odio deserunt, quas fuga explicabo consequuntur corrupti nisi? Ut sunt vitae error.
+            Aliquid atque impedit suscipit et quas. Ut suscipit nam fugiat cumque fuga enim voluptate perferendis recusandae esse animi impedit, velit tempora voluptatum saepe blanditiis corporis placeat odit. Animi, ea at.</p>
+        </section>
+        <section id="testimonials" class="wrapper">
+            <h2>Testimonials</h2>
+            <div class="flexbox">
+                <img src="assets/NPRS-Tongue Badge_Web.png" alt="Noise Pollution Rock School badge logo">
+                <div class="flexbox">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea, temporibus accusantium voluptatem culpa nesciunt, pariatur odio perferendis eligendi saepe dolorum magnam libero sequi fugiat placeat accusamus, esse maxime nisi consequatur?</p>
+                    <h3>Testimonial 1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea, temporibus accusantium voluptatem culpa nesciunt, pariatur odio perferendis eligendi saepe dolorum magnam libero sequi fugiat placeat accusamus, esse maxime nisi consequatur?</p>
+                    <h3>Testimonial 2</h3>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="wrapper">
+            <form method="post" name="emailContactForm" action="SET UP FORMSPREE EMAIL">
+                <fieldset>
+                    <div class="formInputs flexbox">
+                        <label class="sr-only" for="name">Name</label>
+                        <input id="name" type="name" name="name" placeholder="Name">
+                        <label class="sr-only" for="email">Email</label>
+                        <input id="email" type="email" name="email" placeholder="Email">
+                    </div>
+                    <label class="sr-only" for="message">Message</label>
+                    <textarea id="message" type="message" name="message" placeholder="Message" autocomplete="off"></textarea>
+                </fieldset>
+                <button type="submit" value="Send Form">Send</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p class="wrapper footerP">© Noise Pollution Rock School / Matt Ellis</p>
+    </footer>
+    <script src="./script.js"></script>
 </body>
 </html>
