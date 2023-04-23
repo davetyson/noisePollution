@@ -153,6 +153,10 @@ nav {
     border: 5px solid #212121;
 }
 
+#classes p {
+    padding: 10px;
+}
+
 figcaption {
     font-weight: 700;
     font-size: 1rem;
@@ -179,12 +183,11 @@ figcaption {
 }
 
 .classesImg {
-    width: 45%;
+    width: calc(50% - 20px);
     flex-direction: column;
 }
 
 /* Testimonial styles */
-
 #testimonials img {
     width: 35%;
     height: 100%;
@@ -193,10 +196,12 @@ figcaption {
 
 #testimonials p {
     font-size: 1.5rem;
+    padding-left: 50px;
 }
 
 h3 {
     text-align: right;
+    padding-right: 100px;
 }
 
 .testimonialsText {
@@ -206,7 +211,6 @@ h3 {
 }
 
 /* Contact styles */
-
 form {
     padding-top: 20px;
 }
@@ -256,6 +260,18 @@ button:focus {
     margin-left: 10px;
 }
 
+.contactP {
+    display: block;
+    margin: 10px auto;
+    width: 65%;
+    text-align: center;
+}
+
+.addressBlock p {
+    margin: 0 auto;
+    text-align: center;
+}
+
 .nameEmail {
     margin-bottom: 10px;
 }
@@ -266,6 +282,24 @@ footer {
     color: #FFF;
     padding: 20px;
     text-align: center;
+}
+
+.builtBy {
+    padding-top: 10px;
+}
+
+.builtBy,
+.builtBy a {
+    font-size: 1rem;
+}
+
+.builtBy a {
+    color: #FFF;
+}
+
+.builtBy a:hover,
+.builtBy a:focus {
+    color: #FF4031;
 }
 
 /* Media Queries */
