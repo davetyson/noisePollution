@@ -204,6 +204,10 @@ figcaption {
     text-align: center;
 }
 
+.classDetails {
+    margin: 0 auto;
+}
+
 .studioImg,
 .classesImg {
     margin: 10px;
@@ -309,13 +313,14 @@ button:focus {
 .contactInstructions,
 .contactBoxTitle {
     display: block;
-    width: 65%;
+    width: 80%;
     text-align: center;
 }
 
 .contactInstructions {
     margin: 20px auto;
     font-size: 1.5rem;
+    font-weight: 700;
 }
 
 .contactBoxTitle {
@@ -437,6 +442,10 @@ footer {
         padding: 0;
     }
     .testimonialsText {
+        width: 100%;
+    }
+    .contactInstructions,
+    .contactBoxTitle {
         width: 100%;
     }
     fieldset {
