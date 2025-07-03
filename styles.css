@@ -39,7 +39,7 @@ h2 {
 h2 {
     border-bottom: 3px solid #FF4031;
     display: block;
-    width: 50%;
+    width: 65%;
     margin: 0 auto;
 }
 
@@ -105,6 +105,10 @@ figure {
 .menuOpen:hover,
 .menuOpen:focus {
     cursor: pointer;
+}
+
+.italics {
+    font-style: italic;
 }
 
 /* Header styles */
@@ -181,6 +185,14 @@ nav p {
     height: 450px;
 }
 
+.signature {
+    text-align: right;
+}
+
+.programTitle {
+    text-align: left;
+}
+
 /* Classes styles */
 #classes ul {
     margin: 30px auto;
@@ -193,7 +205,7 @@ nav p {
 
 #classes h3 {
     padding: 0;
-    margin: 10px auto 20px auto;
+    margin: 20px auto 20px auto;
     text-align: center;
 }
 
@@ -208,6 +220,10 @@ figcaption {
     display: inline-block;
     padding-top: 10px;
     text-align: center;
+}
+
+.classList {
+    justify-content: center;
 }
 
 .classDetails {
@@ -233,39 +249,30 @@ figcaption {
 
 .classesImg {
     padding-top: 20px;
-    width: calc(50% - 20px);
+    width: calc((100% - 60px) / 3);
     flex-direction: column;
+    align-items: center;
 }
 
-/* Testimonial styles */
-#testimonials figure {
-    width: 35%;
-    height: 100%;
-    padding: 20px;
+/* Additional Services styles */
+#additionalServices h2 {
+    margin-bottom: 20px;
 }
 
-#testimonials p {
-    font-size: 1.5rem;
-    padding-left: 50px;
+#additionalServices p {
+    padding: 0;
+    margin: 5px;
 }
 
-h3 {
-    text-align: right;
-    padding-right: 100px;
-}
-
-.testimonialsFlex {
-    flex-direction: row;
-    margin-bottom: 30px;
-}
-
-.testimonialsText {
+.servicesText {
     flex-direction: column;
-    width: 65%;
-    justify-content: center;
 }
 
 /* Contact styles */
+#contact h2 {
+    margin-top: 25px;
+}
+
 form {
     padding-top: 20px;
 }
@@ -329,6 +336,11 @@ button:focus {
     font-weight: 700;
 }
 
+.contactBoxSubTitle {
+    margin: 10px auto 20px auto;
+    text-align: center;
+}
+
 .contactBoxTitle {
     margin: 10px auto;
 }
@@ -350,9 +362,29 @@ button:focus {
     width: 500px;
 }
 
+.contactIconBox a {
+    display: flex;
+    align-items: center;
+  }
+
 .nameEmail {
     margin-bottom: 10px;
     flex-wrap: nowrap;
+}
+
+.chooseFlex {
+    flex-direction: column;
+    margin: 30px auto;
+}
+
+.contactChoose {
+    margin: 20px auto;
+}
+
+.chooseP {
+    padding: 0;
+    margin: 5px 0;
+    text-align: left;
 }
 
 /* Footer styles */
